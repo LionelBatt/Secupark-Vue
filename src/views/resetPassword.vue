@@ -87,7 +87,7 @@ export default {
       if(this.form.password === this.form.ConfirmPassword){
         // eslint-disable-next-line no-console
         console.log(this.form.password, this.form.ConfirmPassword)
-        axios.post('http://localhost:8080/api/secupark/reset-passwords?' + query + '&email='+ this.form.email ,this.form);
+        axios.post('https://fractalepasswordkeeper.herokuapp.com/api/secupark/reset-passwords?' + query + '&email='+ this.form.email ,this.form);
         // eslint-disable-next-line no-console
         //console.log(this.response.data)
         this.$router.push('/login');

@@ -75,7 +75,7 @@ export default {
     //Reading data from API method.
     readDataFromAPI() {
       this.loading = true;
-      axios.get('http://localhost:8080/api/secupark/history',{headers: authHeader()})
+      axios.get('https://fractalepasswordkeeper.herokuapp.com/api/secupark/history',{headers: authHeader()})
           .then((response) => {
             //Then injecting the result to datatable parameters.
             this.loading = false;

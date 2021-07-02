@@ -266,7 +266,7 @@ export default {
     },
     insertData() {
       console.log(this.car)
-      axios.post('http://localhost:8080/api/secupark/new-car', this.car,{headers: authHeader()})
+      axios.post('https://fractalepasswordkeeper.herokuapp.com/api/secupark/new-car', this.car,{headers: authHeader()})
       this.$router.push('./UserDashboard');
     },
   },

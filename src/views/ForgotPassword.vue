@@ -83,7 +83,7 @@ this.$router.push('/UserDashboard');
       this.$router.replace('/')
     },
   ForgotPassword() {
-  axios.post('http://localhost:8080/api/secupark/forgot-password', this.form);
+  axios.post('https://fractalepasswordkeeper.herokuapp.com/api/secupark/forgot-password', this.form);
   this.send_mail= true;
   this.$router.push('./login');
     }
